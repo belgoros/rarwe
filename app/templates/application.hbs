@@ -7,8 +7,10 @@
         </h1>
       </a>
     </div>
-
+    <nav class="h-8 flex items-center mb 8" role="navigation">
+      <LinkTo @route="bands" class="hover:text-gray-500">Bands</LinkTo>
+      <LinkTo @route="songs" class="hover:text-gray-500 ml-4">Songs</LinkTo>
+    </nav>
     {{outlet}}
-
   </div>
 </div>
