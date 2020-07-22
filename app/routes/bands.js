@@ -1,15 +1,17 @@
 import Route from '@ember/routing/route';
 import { tracked } from '@glimmer/tracking';
 
-class Band {
+export class Band {
 	@tracked name;
+	@tracked songs;
+	
 	constructor({ name, slug, songs}) { 
 		this.name = name;
 		this.slug = slug;
 		this.songs = songs;
 	}
 }
-class Song {
+export class Song {
 	title = ''; 
 	rating = 0;
 	band = '';
