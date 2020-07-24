@@ -32,7 +32,7 @@
       class="px-4 py-2 text-gray-800 bg-white rounded-md"
       placeholder="Title"
       value={{this.title}}
-      {{on "input" (set this.title (get _ "target.value"))}}
+      {{on "input" (pick "target.value" (set this.title))}}
     />
     <button
       type="button"

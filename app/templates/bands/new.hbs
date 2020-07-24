@@ -5,20 +5,13 @@
   <div class="sm:col-span-4">
     <label for="name" class="block text-sm font-medium leading-5">Name</label>
     <div class="relative mt-1 rounded-md shadow-sm">
-      <input 
-        id="name"
-        class="w-full px-4 py-2 text-gray-800 bg-white border rounded-md"
-        value={{this.name}}
-        {{on "input" (set this.name (get _ "target.value"))}}
-      />
+      <input id="name" class="w-full px-4 py-2 text-gray-800 bg-white border rounded-md" value={{this.name}}
+        {{on "input" (pick "target.value" (set this.name))}} />
     </div>
   </div>
   <div class="sm:col-span-4">
-    <button
-      type="button"
-      class="px-4 py-2 bg-purple-600 rounded shadow-md hover:shadow-lg hover:text-white"
-      {{on "click" this.saveBand}}
-    >
+    <button type="button" class="px-4 py-2 bg-purple-600 rounded shadow-md hover:shadow-lg hover:text-white"
+      {{on "click" this.saveBand}}>
       Save
     </button>
   </div>
