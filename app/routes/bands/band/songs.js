@@ -1,6 +1,5 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import Song from 'rarwe/models/song';
 
 export default class BandsBandSongsRoute extends Route {
   @service catalog;

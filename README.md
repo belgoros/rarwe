@@ -24,9 +24,11 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
+The app uses the back-end API available http://json-api.rockandrollwithemberjs.com. So to be able to fetch and display data, you have to start the server with `proxy` option as follows: `ember server --proxy=http://json-api.rockandrollwithemberjs.com` and then visit `localhost:4200`.
+
 ### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+Make use of the many generators for code, try `ember help generate` for more details.
 
 ### Running Tests
 
